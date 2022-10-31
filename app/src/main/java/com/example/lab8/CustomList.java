@@ -95,4 +95,5 @@ public class CustomList extends ArrayAdapter<City> {
         throw new RuntimeException("Not found the city.");
     }
 
+
 }
