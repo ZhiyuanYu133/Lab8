@@ -83,6 +83,16 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city the city to be deleted
      */
     public void delete(City city){
+        for(City c : cities){
+            if(c.getCityName().equals(city.getCityName()) &&
+                    c.getProvinceName().equals(city.getProvinceName())){
+                // Remove this city
+                cities.remove(c);
+                return;
+            }
+        }
+        // Throw an exception
+        throw new RuntimeException("Not found the city.");
     }
 
 }
