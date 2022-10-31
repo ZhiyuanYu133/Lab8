@@ -80,5 +80,23 @@ public class CustomListTest {
         });
     }
 
+    /**
+     * Test for the countCities method
+     */
+    @Test
+    public void testCountCities(){
+        list = MockCityList();
+        assertEquals(0, list.countCities());
 
+        City c1 = new City("Estevan", "SK");
+        City c2 = new City("city1", "p1");
+        City c3 = new City("city12", "p2");
+
+        list.addCity(c1);
+        list.addCity(c2);
+        assertEquals(2, list.countCities());
+
+        list.addCity(c3);
+        assertEquals(3, list.countCities());
+    }
 }

@@ -95,5 +95,12 @@ public class CustomList extends ArrayAdapter<City> {
         throw new RuntimeException("Not found the city.");
     }
 
+    /**
+     * Return how many cities are in the list
+     * @return the number of cities
+     */
+    public int countCities(){
+        return 0;
+    }
 
 }
