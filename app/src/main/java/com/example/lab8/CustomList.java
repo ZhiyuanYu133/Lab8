@@ -59,7 +59,7 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city the city to be added
      */
     public void addCity(City city){
-
+        cities.add(city);
     }
 
 }
